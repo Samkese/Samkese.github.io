@@ -1,111 +1,59 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AppCademia | FitnessFlash Impéperior</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <header class="banner">
-    <img src="slide1.png" alt="Banner FitnessFlash" />
-    <div class="overlay">
-      <h1>AppCademia</h1>
-      <p>Transforme esforço em resultado!</p>
-    </div>
-  </header>
+# appcademia
+App para orientação das atividades físicas ajudando os alunos nas execuções dos exercícios membros participantes desse projeto: 
+Andre Ferreira Back-end (Banco de dados),
+Felippe Dezzoti Frot-end (telas ICM e CALORIAS), 
+Karini Pina Lead page do projeto.
+Samuel de Jesus Silva Front-end (Telas index, home, exerciciosDB, exerciciosdetalhes, exercicios).
 
-  <main class="content">
-    <section>
-      <h2>Sobre o Projeto</h2>
-      <p>
-        O AppCademia é um app voltado para orientação das atividades físicas, ajudando os alunos na execução correta dos exercícios. Desenvolvido como projeto acadêmico, ele conta com telas de treino, cálculo de calorias e detalhamento dos exercícios.
-      </p>
-    </section>
+# Welcome to your Expo app 👋
 
-    <section>
-      <h2>Equipe do Projeto</h2>
-      <ul>
-        <li><strong>André Ferreira</strong> – Back-end (Banco de dados)</li>
-        <li><strong>Felippe Dezzoti</strong> – Front-end (ICM e Calorias)</li>
-        <li><strong>Karini Pina</strong> – Lead Page</li>
-        <li><strong>Samuel de Jesus Silva</strong> – Front-end (index, home, exercíciosDB, detalhes)</li>
-      </ul>
-    </section>
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-    <section>
-      <h2>Repositório do Projeto</h2>
-      <a href="https://github.com/seu-usuario/appcademia" target="_blank">Acessar no GitHub</a>
-    </section>
-  </main>
+## Get started
 
-  <footer>
-    <p>&copy; 2025 FitnessFlash Impéperior - Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
-/* style.css */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background-color: #111;
-  color: #fff;
-}
+1. Install dependencies
 
-.banner {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
+   ```bash
+   npm install
+   ```
 
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+2. Start the app
 
-.banner .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+   ```bash
+   npx expo start
+   ```
 
-.banner h1 {
-  font-size: 48px;
-  color: #00ff66;
-}
+In the output, you'll find options to open the app in a
 
-.banner p {
-  font-size: 20px;
-}
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-.content {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-}
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-.content h2 {
-  color: #00ff66;
-}
+## Get a fresh project
 
-a {
-  color: #00ffcc;
-  text-decoration: none;
-}
+When you're ready, run:
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #222;
-  color: #aaa;
-}
+```bash
+npm run reset-project
+```
+
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+

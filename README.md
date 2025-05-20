@@ -1,5 +1,9 @@
 # appcademia
-App para orientação das atividades físicas ajudando os alunos nas execuções dos exercícios membros participantes desse projeto: Andre Ferreira, Felippe Dezzoti, Karini Pina, Samuel de Jesus Silva.
+App para orientação das atividades físicas ajudando os alunos nas execuções dos exercícios membros participantes desse projeto: 
+Andre Ferreira Back-end (Banco de dados),
+Felippe Dezzoti Frot-end (telas ICM e CALORIAS), 
+Karini Pina Lead page do projeto.
+Samuel de Jesus Silva Front-end (Telas index, home, exerciciosDB, exerciciosdetalhes, exercicios).
 
 # Welcome to your Expo app 👋
 

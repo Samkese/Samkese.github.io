@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Appcademia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+
+    header {
+      background: #0e0e0e;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #222;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ff88;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/images/slide1.png') no-repeat center center/cover;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      color: #00ff88;
+      background-color: rgba(0,0,0,0.7);
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+    }
+
+    .swiper {
+      width: 100%;
+      max-width: 1024px;
+      height: 350px;
+      margin: 3rem auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h3 {
+      color: #00ff88;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      border-bottom: 2px solid #00ff88;
+      display: inline-block;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card p {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    pre {
+      background: #111;
+      padding: 1.5rem;
+      overflow-x: auto;
+      border-radius: 8px;
+      color: #00ff88;
+    }
+
+    .image-preview img {
+      width: 90%;
+      max-width: 720px;
+      margin-top: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #999;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      background: #0e0e0e;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="assets/images/logo.png" alt="Logo Appcademia">
+  <nav>
+    <a href="#carrossel">Slides</a>
+    <a href="#equipe">Equipe</a>
+    <a href="#corpo">Corpo</a>
+    <a href="#instalacao">Instalação</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Seu Treino na Palma da Mão</h2>
+</section>
+
+<section id="carrossel">
+  <h3 style="text-align: center">Visão Geral</h3>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/images/slide1.png" /></div>
+      <div class="swiper-slide"><img src="assets/images/slide2.png" /></div>
+      <div class="swiper-slide"><img src="assets/images/slide3.png" /></div>
+      <div class="swiper-slide"><img src="assets/images/slide4.png" /></div>
+      <div class="swiper-slide"><img src="assets/images/slide5.png" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section class="section" id="equipe">
+  <h3>Equipe do Projeto</h3>
+  <div class="grid">
+    <div class="card"><p>Andre Ferreira<br><small>Back-end</small></p></div>
+    <div class="card"><p>Felippe Dezzoti<br><small>Front-end (ICM & Calorias)</small></p></div>
+    <div class="card"><p>Karini Pina<br><small>Lead Page</small></p></div>
+    <div class="card"><p>Samuel de Jesus<br><small>Front-end (Telas Exercícios)</small></p></div>
+  </div>
+</section>
+
+<section class="section" id="corpo">
+  <h3>Áreas do Corpo Trabalhadas</h3>
+  <div class="grid">
+    <div class="card"><img src="assets/images/costas.jpg"><p>Costas</p></div>
+    <div class="card"><img src="assets/images/cardio.jpg"><p>Cardio</p></div>
+    <div class="card"><img src="assets/images/bracos_inferiores.jpg"><p>Braços Inferiores</p></div>
+    <div class="card"><img src="assets/images/bracos_superiores.jpg"><p>Braços Superiores</p></div>
+    <div class="card"><img src="assets/images/ombros.jpg"><p>Ombros</p></div>
+    <div class="card"><img src="assets/images/pescoco.jpg"><p>Pescoço</p></div>
+    <div class="card"><img src="assets/images/peito.jpg"><p>Peito</p></div>
+    <div class="card"><img src="assets/images/cintura.jpg"><p>Cintura</p></div>
+    <div class="card"><img src="assets/images/pernas_inferiores.jpg"><p>Pernas Inferiores</p></div>
+    <div class="card"><img src="assets/images/pernas_superiores.jpg"><p>Pernas Superiores</p></div>
+  </div>
+</section>
+
+<section class="section" id="instalacao">
+  <h3>Como Instalar o Projeto</h3>
+  <pre>
+1. Instalar dependências:
+   npm install
+
+2. Iniciar o app:
+   npx expo start
+
+3. Resetar:
+   npm run reset-project
+  </pre>
+</section>
+
+<div class="section image-preview">
+  <h3>Preview</h3>
+  <img src="assets/images/Lendpage.png" alt="Imagem do app">
+</div>
+
+<footer>
+  &copy; 2025 Appcademia. Desenvolvido por Samuel e equipe.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+
+</body>
+</html>
